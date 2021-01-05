@@ -125,7 +125,7 @@
 /* How do I play this? */
 .services__card:nth-child(1) {
     background-position: center;
-    background-image: url('images/sample-computer-vision.jpg');
+    background-image: url('src/images/sample-computer-vision.jpg');
 }
 
 /* Motion Design */
