@@ -9,11 +9,13 @@ closeButton.addEventListener('click', closeModal);
 function openModal() {
     modal.classList.add('active');
     overlay.classList.add('active');
+    document.body.style.overflow = "hidden";
 }
 
 function closeModal() {
     modal.classList.remove('active');
     overlay.classList.remove('active');
+    document.body.style.overflow = "auto";
 }
 
 overlay.addEventListener('click', () => {
