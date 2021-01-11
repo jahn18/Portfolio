@@ -73,6 +73,7 @@
 .main__container {
     display: block;
     width: 100%;
+    height: auto;
     justify-content: center;
     padding-left: 175px;
     padding-top: 50px;
@@ -125,6 +126,7 @@
 
 .services {
     background: white;
+    position: static;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -158,8 +160,15 @@
     position: relative;
 }
 
-/* Motion Design */
+/* Snowball */
 .services__card:nth-child(1) {
+    background-position: -7px 5px;
+    background-image: url('src/images/snowball.png');
+    background-size: 265px;
+}
+
+/* Motion Design */
+.services__card:nth-child(2) {
     background-position: center;
     background-image: url('src/Motion-Design/Project-Wave.gif');
     background-size: contain;
@@ -269,6 +278,18 @@
     height: auto;
 }
 
+/* Snowball */
+#snowball-modal .modal-body p {
+    text-align: center;
+}
+
+#snowball-modal .modal-body .animations {
+    align-items: center;
+    width: 55%;
+    height: auto;
+    box-shadow: 0 0 3px 1px grey;
+}
+
 @media screen and (max-width: 980px) {
     .modal-body {
         margin: 0 auto;
@@ -339,7 +360,8 @@
 /* Footer CSS */
 
 .footer__container {
-    position: relative;
+    display: block;
+    position: static;
     margin-left: 175px;
     padding-top: 10px;
     /*display: flex;*/
@@ -358,7 +380,6 @@
 
 @media screen and (max-width: 928px) {
     .footer__container {
-        padding-top: 35px;
     }
 }
 
@@ -367,7 +388,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 45px;
         margin-left: revert;
     }
 
@@ -379,7 +399,6 @@
 
 @media screen and (max-width: 480px) {
     .footer__container {
-        padding-top: 20px;
     }
 
     .footer__links--items {
