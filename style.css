@@ -67,7 +67,7 @@
 /* <-- MAIN CONTENT --> */
 
 .main {
-    height: 28vh;
+    height: auto;
 }
 
 .main__container {
@@ -322,7 +322,7 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     pointer-events: none;
-    z-index: 1;
+    z-index: 5;
 }
 
 #overlay .close-button {
